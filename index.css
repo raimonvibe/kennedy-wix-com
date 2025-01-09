@@ -223,6 +223,7 @@ p {
 	justify-content: space-around;
 	height: 313px;
 	width: 430px;
+	object-fit: contain;
 }
 .flex p{
 	width: 435px;
@@ -247,11 +248,13 @@ p {
 	width: 426px;
 	height: 221px;
 	margin-top: 110px;
+	object-fit: contain;
 }
 .flexup #image2{
 	justify-content: space-around;
 	width: 426px;
-	height: 221px
+	height: 221px;
+	object-fit: contain;
 }
 .flexup p{
 	width: 470px;
@@ -330,8 +333,11 @@ p {
     }
     
     .flex img, .flexup #image1, .flexup #image2 {
-        width: 100%;
+        max-width: 100%;
+        width: auto;
         height: auto;
+        max-height: 313px;
+        object-fit: contain;
     }
 }
 
@@ -364,6 +370,11 @@ p {
     
     .data1 {
         flex-direction: column;
+    }
+    
+    .flex img, .flexup #image1, .flexup #image2 {
+        max-width: 90%;
+        margin: 15px auto;
     }
 }
 
@@ -404,5 +415,10 @@ p {
     
     .cover p {
         padding: 0 20px;
+    }
+    
+    .flex img, .flexup #image1, .flexup #image2 {
+        max-width: 95%;
+        margin: 10px auto;
     }
 }
